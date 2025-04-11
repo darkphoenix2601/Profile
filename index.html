@@ -3,51 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Akshit's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-
+    <button id="theme-toggle">🌙 Toggle Theme</button>
+    
     <header>
-        <h1 id="animate-text">Hey! I'm a Freelancer</h1>
-        <p>Developer | Designer | Video Editor | Writer</p>
+        <h1 id="typing-text"></h1>
     </header>
+    
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Akshit, a passionate developer always exploring new ideas.</p>
+        </section>
 
-    <section class="about">
-        <img src="your-image.jpg" alt="Your Picture">
-        <h2>About Me</h2>
-        <p>I've worked in VPS hosting, Python coding, bot development, Heroku deployment, web design, video editing, and logo making. I even enjoy writing, and my typing speed varies between **50-70 WPM**!</p>
-    </section>
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">Project 1</div>
+                <div class="project-card">Project 2</div>
+                <div class="project-card">Project 3</div>
+            </div>
+        </section>
 
-    <section class="skills">
-        <h2>My Skills</h2>
-        <div class="skill-box">
-            <img src="python-logo.png" alt="Python">
-            <p>Python Programming</p>
-        </div>
-        <div class="skill-box">
-            <img src="web-design.png" alt="Web Development">
-            <p>Web Development (HTML, CSS, JS)</p>
-        </div>
-        <div class="skill-box">
-            <img src="bot.png" alt="Bot Development">
-            <p>Bot Creation & Automation</p>
-        </div>
-    </section>
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
 
-    <section class="typing-test">
-        <h2>Typing Speed Tracker</h2>
-        <p>My typing speed ranges from 50-70 WPM. Want to test yours?</p>
-        <button onclick="startTypingTest()">Start Typing Test</button>
-        <p id="typing-result"></p>
-    </section>
-
-    <section class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: github.com/yourusername</p>
-    </section>
-
-    <script src="script.js"></script>
+    <footer>
+        <p>Connect with me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
 </body>
 </html>
