@@ -28,10 +28,15 @@ const skills = {
         title: "Bot Development",
         description: "Developing intelligent bots using APIs and machine learning algorithms for automation.",
         image: "bot.jpg"
+    },
+    languages: {
+        title: "Fluent in Hindi & English",
+        description: "Proficient in both Hindi and English, allowing seamless communication across diverse audiences.",
+        image: "languages.jpg"
     }
 };
 
-// Function to Reveal Skills on Scroll
+// Scroll-triggered animation
 function revealSkills() {
     const skillCards = document.querySelectorAll(".skill-card");
 
@@ -45,7 +50,7 @@ function revealSkills() {
     });
 }
 
-// Function to Toggle Skill Details
+// Toggle skill details
 function toggleDetails(skillKey) {
     const skillInfo = skills[skillKey];
 
@@ -58,11 +63,11 @@ function toggleDetails(skillKey) {
     }
 }
 
-// Scroll Detection to Reveal Skills
+// Scroll detection
 window.addEventListener("scroll", revealSkills);
 document.addEventListener("DOMContentLoaded", revealSkills);
 
-// Contact Form Submission
+// Contact form submission
 document.getElementById("contact-form").addEventListener("submit", (e) => {
     e.preventDefault();
     document.getElementById("form-status").innerText = "Thanks for reaching out! I'll get back to you soon.";
