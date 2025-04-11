@@ -1,29 +1,51 @@
 const skills = {
-    linux: { title: "Linux User", description: "Deep knowledge of Kali, Ubuntu, Parrot, and Arch Linux.", image: "linux.jpg" },
-    python: { title: "Python Development", description: "Building scalable applications and automation tools.", image: "python.jpg" },
-    vps: { title: "VPS & Heroku Hosting", description: "Cloud-based deployments and server management.", image: "vps.jpg" },
-    video: { title: "Video Editing & Logo Making", description: "Expert in Adobe Premiere, After Effects, and Photoshop.", image: "video.jpg" },
-    typing: { title: "Typing Speed", description: "Fast and accurate typing for productive coding.", image: "typing.jpg" },
-    bot: { title: "Bot Development", description: "Creating automated bots using Python and APIs.", image: "bot.jpg" },
-    languages: { title: "Fluent in Hindi & English", description: "Proficient communication skills in Hindi and English.", image: "languages.jpg" }
+    linux: {
+        title: "Linux User",
+        description: "Deep knowledge of Kali, Ubuntu, Parrot, and Arch Linux for cybersecurity and development.",
+        image: "linux.jpg"
+    },
+    python: {
+        title: "Python Development",
+        description: "Developing efficient, scalable applications in Python for automation and AI projects.",
+        image: "python.jpg"
+    },
+    vps: {
+        title: "VPS & Heroku Hosting",
+        description: "Experience deploying applications efficiently on cloud-based VPS and Heroku.",
+        image: "vps.jpg"
+    },
+    video: {
+        title: "Video Editing & Logo Making",
+        description: "Expert in Adobe Premiere, After Effects, and Photoshop for digital content creation.",
+        image: "video.jpg"
+    },
+    typing: {
+        title: "Typing Speed",
+        description: "High typing speed and accuracy for productive coding and data entry.",
+        image: "typing.jpg"
+    },
+    bot: {
+        title: "Bot Development",
+        description: "Developing intelligent bots using APIs and machine learning algorithms for automation.",
+        image: "bot.jpg"
+    },
+    languages: {
+        title: "Fluent in Hindi & English",
+        description: "Proficient in both Hindi and English, allowing seamless communication across diverse audiences.",
+        image: "languages.jpg"
+    }
 };
 
 // Scroll-triggered animation
 function revealSkills() {
-    const skillRows = document.querySelectorAll(".skill-row");
+    const skillCards = document.querySelectorAll(".skill-card");
 
-    skillRows.forEach((row, index) => {
-        const rowPosition = row.getBoundingClientRect().top;
+    skillCards.forEach(card => {
+        const cardPosition = card.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
-        if (rowPosition < windowHeight - 100) {
-            row.classList.add("show");
-            row.classList.remove("hide");
-
-            // Zoom-out previous elements
-            if (index > 0) {
-                skillRows[index - 1].classList.add("hide");
-            }
+        if (cardPosition < windowHeight - 100) {
+            card.classList.add("show");
         }
     });
 }
