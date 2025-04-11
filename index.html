@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Welcome to My Portfolio</h1>
+        <p class="subtitle">Showcasing My Skills & Expertise</p>
+    </header>
+
+    <main>
+        <section class="skills">
+            <h2>Skills & Expertise</h2>
+            <div class="skill-grid">
+                <div class="skill-card" onclick="toggleDetails('vps')">
+                    <img src="vps.jpg" alt="VPS Hosting">
+                    <p>VPS Hosting</p>
+                </div>
+                <div class="skill-card" onclick="toggleDetails('heroku')">
+                    <img src="heroku.jpg" alt="Heroku Hosting">
+                    <p>Heroku Hosting</p>
+                </div>
+                <div class="skill-card" onclick="toggleDetails('linux')">
+                    <img src="linux.jpg" alt="Linux User">
+                    <p>Linux User</p>
+                </div>
+                <div class="skill-card" onclick="toggleDetails('video')">
+                    <img src="video.jpg" alt="Video Editing & Logo Making">
+                    <p>Video Editing & Logo Making</p>
+                </div>
+                <div class="skill-card" onclick="toggleDetails('python')">
+                    <img src="python.jpg" alt="Python Development">
+                    <p>Python Development</p>
+                </div>
+                <div class="skill-card" onclick="toggleDetails('bot')">
+                    <img src="bot.jpg" alt="Bot Development">
+                    <p>Bot Development</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill-details" class="hidden">
+            <img id="skill-image" src="" alt="Skill Image">
+            <h2 id="skill-title"></h2>
+            <p id="skill-description"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Connect with me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
