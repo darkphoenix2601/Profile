@@ -1,61 +1,18 @@
-/* Background & Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-}
-
-/* Skills Section */
-.skills {
-    margin: 40px auto;
-}
-
-/* Row-wise Layout */
+/* Full-screen layout */
 .skill-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70%;
+    width: 85%;
+    max-width: 950px;
     margin: auto;
 }
 
-/* Skill Row */
-.skill-row {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    width: 90%;
-    max-width: 700px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-}
-
-/* Image Styling */
-.skill-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-}
-
-/* Scroll-triggered Animation */
-.skill-row.show {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-}
-
-/* Tooltip styling */
-.tooltip {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.9);
-    color: black;
-    padding: 8px;
-    border-radius: 5px;
+/* Hide descriptions by default */
+.about-text {
     display: none;
-    font-size: 14px;
+    font-size: 18px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.skill-content h2:hover + .about-text {
+    display: block;
 }
