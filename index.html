@@ -18,60 +18,57 @@
         <section class="skills">
             <h2>Skills & Expertise</h2>
             <div class="skill-container">
-                <div class="skill-row hidden" onmouseover="showTooltip('linux')" onmouseout="hideTooltip()">
+                <div class="skill-row">
                     <img class="skill-img" src="linux.jpg" alt="Linux User">
                     <div class="skill-content">
-                        <h2 id="linux">Linux User</h2>
-                        <p>Experienced with multiple Linux distros: Kali, Ubuntu, Parrot, and Arch Linux for cybersecurity and development.</p>
+                        <h2 id="linux" onmouseover="showAbout('linux')" onmouseout="hideAbout()">Linux User</h2>
+                        <p id="about-linux" class="about-text">Experienced with multiple Linux distros: Kali, Ubuntu, Parrot, and Arch Linux for cybersecurity and development.</p>
                     </div>
                 </div>
-                <div class="skill-row hidden" onmouseover="showTooltip('python')" onmouseout="hideTooltip()">
+                <div class="skill-row">
                     <img class="skill-img" src="python.jpg" alt="Python Development">
                     <div class="skill-content">
-                        <h2 id="python">Python Development</h2>
-                        <p>Building scalable applications, automation tools, and AI-driven solutions.</p>
+                        <h2 id="python" onmouseover="showAbout('python')" onmouseout="hideAbout()">Python Development</h2>
+                        <p id="about-python" class="about-text">Building scalable applications, automation tools, and AI-driven solutions.</p>
                     </div>
                 </div>
-                <div class="skill-row hidden" onmouseover="showTooltip('vps')" onmouseout="hideTooltip()">
+                <div class="skill-row">
                     <img class="skill-img" src="vps.jpg" alt="VPS & Heroku Hosting">
                     <div class="skill-content">
-                        <h2 id="vps">VPS & Heroku Hosting</h2>
-                        <p>Deploying cloud-based applications and managing server configurations.</p>
+                        <h2 id="vps" onmouseover="showAbout('vps')" onmouseout="hideAbout()">VPS & Heroku Hosting</h2>
+                        <p id="about-vps" class="about-text">Deploying cloud-based applications and managing server configurations.</p>
                     </div>
                 </div>
-                <div class="skill-row hidden" onmouseover="showTooltip('video')" onmouseout="hideTooltip()">
+                <div class="skill-row">
                     <img class="skill-img" src="video.jpg" alt="Video Editing & Logo Making">
                     <div class="skill-content">
-                        <h2 id="video">Video Editing & Logo Making</h2>
-                        <p>Expertise in Adobe Premiere, After Effects, and Photoshop for creative content production.</p>
+                        <h2 id="video" onmouseover="showAbout('video')" onmouseout="hideAbout()">Video Editing & Logo Making</h2>
+                        <p id="about-video" class="about-text">Expertise in Adobe Premiere, After Effects, and Photoshop for creative content production.</p>
                     </div>
                 </div>
-                <div class="skill-row hidden" onmouseover="showTooltip('typing')" onmouseout="hideTooltip()">
+                <div class="skill-row">
                     <img class="skill-img" src="typing.jpg" alt="Typing Speed">
                     <div class="skill-content">
-                        <h2 id="typing">Typing Speed</h2>
-                        <p>High typing speed and accuracy for productive coding and data entry.</p>
+                        <h2 id="typing" onmouseover="showAbout('typing')" onmouseout="hideAbout()">Typing Speed</h2>
+                        <p id="about-typing" class="about-text">High typing speed and accuracy for productive coding and data entry.</p>
                     </div>
                 </div>
-                <div class="skill-row hidden" onmouseover="showTooltip('bot')" onmouseout="hideTooltip()">
+                <div class="skill-row">
                     <img class="skill-img" src="bot.jpg" alt="Bot Development">
                     <div class="skill-content">
-                        <h2 id="bot">Bot Development</h2>
-                        <p>Developing automation bots using Python, APIs, and machine learning algorithms.</p>
+                        <h2 id="bot" onmouseover="showAbout('bot')" onmouseout="hideAbout()">Bot Development</h2>
+                        <p id="about-bot" class="about-text">Developing automation bots using Python, APIs, and machine learning algorithms.</p>
                     </div>
                 </div>
-                <div class="skill-row hidden" onmouseover="showTooltip('languages')" onmouseout="hideTooltip()">
+                <div class="skill-row">
                     <img class="skill-img" src="languages.jpg" alt="Fluent in Hindi & English">
                     <div class="skill-content">
-                        <h2 id="languages">Fluent in Hindi & English</h2>
-                        <p>Proficient communication skills in Hindi and English, ensuring seamless interaction.</p>
+                        <h2 id="languages" onmouseover="showAbout('languages')" onmouseout="hideAbout()">Fluent in Hindi & English</h2>
+                        <p id="about-languages" class="about-text">Proficient communication skills in Hindi and English, ensuring seamless interaction.</p>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Tooltip Element -->
-        <div id="tooltip" class="tooltip"></div>
 
         <section class="contact">
             <h2>Contact Me</h2>
