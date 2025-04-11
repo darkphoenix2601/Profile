@@ -8,14 +8,24 @@ function revealSkills() {
 
         if (rowPosition < windowHeight - 150) {
             row.classList.add("show");
-            row.classList.remove("hide");
-
-            // Zoom-out previous elements
-            if (index > 0) {
-                skillRows[index - 1].classList.add("hide");
-            }
         }
     });
+}
+
+// Tooltip functionality
+function showTooltip(skillId) {
+    const tooltip = document.getElementById("tooltip");
+    const skillElement = document.getElementById(skillId);
+    tooltip.innerText = `Click to see details about ${skillElement.innerText}`;
+    
+    const rect = skillElement.getBoundingClientRect();
+    tooltip.style.top = `${rect.top - 30}px`;
+    tooltip.style.left = `${rect.left + 20}px`;
+    tooltip.style.display = "block";
+}
+
+function hideTooltip() {
+    document.getElementById("tooltip").style.display = "none";
 }
 
 // Scroll detection
