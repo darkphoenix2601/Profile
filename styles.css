@@ -1,45 +1,33 @@
-/* Background & Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
-}
-
 /* Skills Section */
-.skills {
-    margin: 40px auto;
-}
-
-/* Row-wise Layout */
 .skill-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 60%; /* Reduced width for compact layout */
+    margin: auto;
 }
 
 /* Skill Row */
 .skill-row {
-    width: 80%;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    gap: 15px;
+    padding: 15px;
+    width: 100%;
+    max-width: 600px; /* Restrict width */
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
     opacity: 0;
-    transform: translateY(50px) scale(0.8);
+    transform: translateY(30px) scale(0.9);
 }
 
 /* Image Styling */
 .skill-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
+    width: 80px; /* Reduced size */
+    height: 80px;
+    border-radius: 8px;
 }
 
 /* Scroll-triggered Animation */
@@ -50,41 +38,6 @@ body {
 
 /* Zoom-out Previous Skills */
 .skill-row.hide {
-    opacity: 0.5;
-    transform: scale(0.6);
-}
-
-/* Contact Form */
-.contact {
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
-form button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.3);
-    transition: background 0.3s ease-in-out;
-}
-
-form button:hover {
-    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.4;
+    transform: scale(0.8);
 }
