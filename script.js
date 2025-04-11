@@ -31,6 +31,20 @@ const skills = {
     }
 };
 
+// Function to Reveal Skills on Scroll
+function revealSkills() {
+    const skillCards = document.querySelectorAll(".skill-card");
+
+    skillCards.forEach(card => {
+        const cardPosition = card.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (cardPosition < windowHeight - 100) {
+            card.classList.add("show"); // Apply zoom effect
+        }
+    });
+}
+
 // Function to Toggle Skill Details
 function toggleDetails(skillKey) {
     const skillInfo = skills[skillKey];
@@ -43,6 +57,10 @@ function toggleDetails(skillKey) {
         document.getElementById("skill-details").style.display = "block";
     }
 }
+
+// Scroll Detection to Reveal Skills
+window.addEventListener("scroll", revealSkills);
+document.addEventListener("DOMContentLoaded", revealSkills);
 
 // Contact Form Submission
 document.getElementById("contact-form").addEventListener("submit", (e) => {
