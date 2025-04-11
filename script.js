@@ -6,7 +6,7 @@ function revealSkills() {
         const rowPosition = row.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
 
-        if (rowPosition < windowHeight - 100) {
+        if (rowPosition < windowHeight - 150) {
             row.classList.add("show");
             row.classList.remove("hide");
 
