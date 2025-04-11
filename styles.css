@@ -21,21 +21,25 @@ body {
 }
 
 .skill-card {
+    width: 250px; /* Fixed width */
     padding: 20px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.8); /* Slight zoom-out */
+}
+
+.skill-card.show {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .skill-card img {
     width: 100px;
     height: 100px;
     border-radius: 10px;
-}
-
-.skill-card:hover {
-    transform: scale(1.1);
 }
 
 /* Hidden Skill Details */
