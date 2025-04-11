@@ -45,7 +45,7 @@ function revealSkills() {
         const windowHeight = window.innerHeight;
 
         if (cardPosition < windowHeight - 100) {
-            card.classList.add("show"); // Apply zoom effect
+            card.classList.add("show");
         }
     });
 }
