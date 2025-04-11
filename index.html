@@ -18,25 +18,25 @@
         <section class="skills">
             <h2>Skills & Expertise</h2>
             <div class="skill-grid">
-                <div class="skill-card" onclick="toggleDetails('vps')">
-                    <img src="vps.jpg" alt="VPS Hosting">
-                    <p>VPS Hosting</p>
-                </div>
-                <div class="skill-card" onclick="toggleDetails('heroku')">
-                    <img src="heroku.jpg" alt="Heroku Hosting">
-                    <p>Heroku Hosting</p>
-                </div>
                 <div class="skill-card" onclick="toggleDetails('linux')">
                     <img src="linux.jpg" alt="Linux User">
                     <p>Linux User</p>
+                </div>
+                <div class="skill-card" onclick="toggleDetails('python')">
+                    <img src="python.jpg" alt="Python Development">
+                    <p>Python Development</p>
+                </div>
+                <div class="skill-card" onclick="toggleDetails('vps')">
+                    <img src="vps.jpg" alt="VPS & Heroku Hosting">
+                    <p>VPS & Heroku Hosting</p>
                 </div>
                 <div class="skill-card" onclick="toggleDetails('video')">
                     <img src="video.jpg" alt="Video Editing & Logo Making">
                     <p>Video Editing & Logo Making</p>
                 </div>
-                <div class="skill-card" onclick="toggleDetails('python')">
-                    <img src="python.jpg" alt="Python Development">
-                    <p>Python Development</p>
+                <div class="skill-card" onclick="toggleDetails('typing')">
+                    <img src="typing.jpg" alt="Typing Speed">
+                    <p>Typing Speed</p>
                 </div>
                 <div class="skill-card" onclick="toggleDetails('bot')">
                     <img src="bot.jpg" alt="Bot Development">
@@ -49,6 +49,17 @@
             <img id="skill-image" src="" alt="Skill Image">
             <h2 id="skill-title"></h2>
             <p id="skill-description"></p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+                <p id="form-status"></p>
+            </form>
         </section>
     </main>
 
